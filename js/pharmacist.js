@@ -5,7 +5,7 @@ if (!session) {
   throw new Error("Redirecting unauthenticated user");
 }
 
-const STORAGE_KEY = `healthhub:pharmacist:${session.username}`;
+const STORAGE_KEY = `ethicure:pharmacist:${session.username}`;
 
 const defaultData = {
   prescriptions: [

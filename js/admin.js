@@ -7,7 +7,7 @@ if (!session) {
 }
 
 // Storage key
-const STORAGE_KEY = `healthhub:admin:${session.username}`;
+const STORAGE_KEY = `ethicure:admin:${session.username}`;
 
 // Helper function
 function addDays(offset) {
@@ -105,10 +105,10 @@ const defaultData = {
     phone: "+1 234 567 0000"
   },
   preferences: {
-    hospitalName: "HealthHub Medical Center",
+    hospitalName: "ethicure Medical Center",
     address: "123 Medical Street, Healthcare City",
     phone: "+1 234 567 0000",
-    email: "info@healthhub.com"
+    email: "info@ethicure.com"
   },
   notifications: [
     { id: "notif-1", message: "New appointment scheduled", time: addDays(0), read: false, type: "appointment" },

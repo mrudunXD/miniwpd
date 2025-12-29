@@ -1,6 +1,6 @@
 const STORAGE_KEYS = {
-  users: "healthhubUsers",
-  session: "healthhubCurrentUser",
+  users: "ethicureUsers",
+  session: "ethicureCurrentUser",
 };
 
 const ROLE_TO_PAGE = {
@@ -268,7 +268,7 @@ function initAuth() {
   }
 }
 
-const HealthHubAuthAPI = {
+const ethicureAuthAPI = {
   getSession,
   clearSession,
   requireAuth,
@@ -278,6 +278,6 @@ const HealthHubAuthAPI = {
   createSession,
 };
 
-window.HealthHubAuth = Object.freeze(HealthHubAuthAPI);
+window.ethicureAuth = Object.freeze(ethicureAuthAPI);
 
 initAuth();

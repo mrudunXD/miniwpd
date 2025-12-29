@@ -5,7 +5,7 @@ if (!session) {
   throw new Error("Redirecting unauthenticated user");
 }
 
-const STORAGE_KEY = `healthhub:staff:${session.username}`;
+const STORAGE_KEY = `ethicure:staff:${session.username}`;
 
 const defaultData = {
   visits: [
